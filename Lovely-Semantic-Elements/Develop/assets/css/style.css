@@ -16,17 +16,23 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: grey;
+    width: 100%;
 }
 
 /* edit affects heading in parent class header */
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    color: white;
+}
+
+header h1 nav .navbar {
+    width: 100%;
 }
 
 /* edit affects nested class in heading element under parent class header */
 .header h1 .seo {
-    color: grey;
+    color: #d9dcd6;
 }
 
 /* edit affects div in parent class */
@@ -36,6 +42,7 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    width: 100%;
 }
 
 /* edit affects unordered list within parent class */
@@ -83,6 +90,7 @@ body {
     list-style-type: none
      /* text is centered */
   }
+  
 /* edit affects element */
 a {
     color: #ffffff;
