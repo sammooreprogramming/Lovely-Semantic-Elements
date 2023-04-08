@@ -1,277 +1,280 @@
-/* universal selector affects all css properties and selectors */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+    /* universal selector affects all css properties and selectors */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-/* edit affects body element */
-body {
-    background-color: #2589bd
-}
+    /* edit affects body element */
+    body {
+        background-color: #2589bd
+    }
 
-/* edit affects class header */
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: grey;
-    width: 100%;
-}
+    /* edit affects class header */
+    .header {
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #2a607c;
+        color: grey;
+        width: 100%;
+    }
 
-/* edit affects heading in parent class header */
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-    color: white;
-}
+    /* edit affects heading in parent class header */
+    .header h1 {
+        display: inline-block;
+        font-size: 48px;
+        color: white;
+    }
 
-header h1 nav .navbar {
-    width: 100%;
-}
+    /* edit makes navbar class span entire screen */
+    header h1 nav .navbar {
+        width: 100%;
+    }
 
-/* edit affects nested class in heading element under parent class header */
-.header h1 .seo {
-    color: #d9dcd6;
-}
+    /* edit affects nested class in heading element under parent class header */
+    .header h1 .seo {
+        color: #d9dcd6;
+    }
 
-/* edit affects div in parent class */
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    width: 100%;
-}
+    /* edit affects div in parent class */
+    .header div {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        width: 100%;
+    }
 
-/* edit affects unordered list within parent class */
-.header div ul {
-    list-style-type: none;
-}
+    /* edit affects unordered list within parent class */
+    .header div ul {
+        list-style-type: none;
+    }
 
-/* edit affects list item within parent class */
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-    list-style-type: none
-}
+    /* edit affects list item within parent class */
+    .header div ul li {
+        display: inline-block;
+        margin-left: 25px;
+        list-style-type: none
+    }
 
-/* Style the navigation menu */
-.navbar {
-    width: 100%;
-    background-color: #2a607c;
-    overflow: auto;
-    display: flex;
-  }
+    /* Style the navigation menu */
+    .navbar {
+        width: 100%;
+        background-color: #2a607c;
+        overflow: auto;
+        display: flex;
+        flex: auto;
+    }
   
-  /* Navigation links */
-  .navbar ul li a {
-    flex: 1;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 25%; 
-    text-align: center; /* text is centered */
-    list-style-type: none
-  }
+    /* Navigation links */
+    .navbar ul li a {
+        flex: 1;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%; 
+        text-align: center; 
+        list-style-type: none
+    }
 
+  /* edits header tag in navbar */
+    .navbar ul li h1 {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%; 
+        text-align: center;
+        list-style-type: none
+        /* text is centered */
+    }
+    
+    /* edit affects element */
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-  
-  .navbar ul li h1 {
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 25%; 
-    text-align: center;
-    list-style-type: none
-     /* text is centered */
-  }
-  
-/* edit affects element */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+    /* edit affects element */
+    p {
+        font-size: 16px;
+    }
 
-/* edit affects element */
-p {
-    font-size: 16px;
-}
+    /* edit affects class */
+    .hero {
+        height: 800px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/digital-marketing-meeting.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
-/* edit affects class */
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
+    /* edit affects class */
+    .float-left {
+        float: left;
+        margin-right: 25px;
+    }
 
-/* edit affects class */
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
+    /* edit affects class */
+    .float-right {
+        float: right;
+        margin-left: 25px;
+    }
 
-/* edit affects class */
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
+    /* edit affects class */
+    .content {
+        width: 75%;
+        display: inline-block;
+        margin-left: 20px;
+    }
 
-/* edit affects class */
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
+    /* edit affects class */
+    .benefits {
+        margin-right: 20px;
+        padding: 20px;
+        clear: both;
+        float: right;
+        width: 20%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #2589bd;
+        flex: auto;
+        flex-wrap: wrap;
+    }
 
-/* edit affects class */
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
+    /* edit affects class */
+    .benefit-lead {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+    /* edit affects class */
+    .benefit-brand {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+    /* edit affects class */
+    .benefit-cost {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+    /* edit affects heading in class */
+    .benefit-lead h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-/* edit affects heading in class */
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+    /* edit affects heading in class */
+    .benefit-brand h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-/* edit affects heading in class */
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+    /* edit affects heading in class */
+    .benefit-cost h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-/* edit affects heading in class */
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+    /* within the parent class this edits the ima element to be a certain height */
+    .benefit-lead img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 
-/* within the parent class this edits the ima element to be a certain height */
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+    /* within the parent class this edits the ima element to be a certain height */
+    .benefit-brand img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 
-/* within the parent class this edits the ima element to be a certain height */
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+    /* edit affects image in parent class */
+    .benefit-cost img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 
-/* edit affects image in parent class */
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+    /* edit affects class */
+    .search-engine-optimization {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+    /* edit affects class */
+    .online-reputation-management {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+    /* edit affects class */
+    .social-media-marketing {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
 
-/* edit affects class */
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+    /* within the parent class this edits the img element to be a certain height */
+    .search-engine-optimization img {
+        max-height: 200px;
+    }
 
-/* within the parent class this edits the img element to be a certain height */
-.search-engine-optimization img {
-    max-height: 200px;
-}
+    /* within the parent class this edits the img element to be a certain height */
+    .online-reputation-management img {
+        max-height: 200px;
+    }
 
-/* within the parent class this edits the img element to be a certain height */
-.online-reputation-management img {
-    max-height: 200px;
-}
+    /* within the parent class this edits the img element to be a certain height */
+    .social-media-marketing img {
+        max-height: 200px;
+    }
 
-/* within the parent class this edits the img element to be a certain height */
-.social-media-marketing img {
-    max-height: 200px;
-}
+    /* within the parent class this edits the heading element to be a certain font */
+    .search-engine-optimization h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
 
-/* within the parent class this edits the heading element to be a certain font */
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    /* within the parent class this edits the heading element to be a certain font */
+    .online-reputation-management h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
 
-/* within the parent class this edits the heading element to be a certain font */
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    /* within the parent class this edits the heading element to be a certain font */
+    .social-media-marketing h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
 
-/* within the parent class this edits the heading element to be a certain font */
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    /* this edits the footer class */
+    .footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
 
-/* this edits the footer class */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-/* adjusts heading tag's font size */
-.footer h2 {
-    font-size: 20px;
-}
+    /* adjusts heading tag's font size */
+    .footer h2 {
+        font-size: 20px;
+    }
